@@ -28,7 +28,7 @@ public class ExtentReport {
 			extent.close();
 		}
 		catch (Exception e){
-			e.printStackTrace();
+		system.out.println("Error closing report;");
 		}
 		
 	}
