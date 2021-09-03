@@ -1,4 +1,4 @@
-#codility
+# Codility
 
 There are total 6 tests, 5 cross browser tests for **"Responsive Fight"** app and 1 API tests covering all API operatons for **"Super Villain API"**.
 
