@@ -24,7 +24,12 @@ public class ExtentReport {
 	public static void endReport() {
 		
 		extent.flush();
-		extent.close();
+		try {
+			extent.close();
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
 		
 	}
 	
