@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Responsive Fight" parallel="none" >
-		<test name="RF - Bus Challenge Local Chrome" preserve-order="true">
-			<classes><class name="tests.responsivefight.busChallenge"></class></classes>
-			<parameter name="Browser" value="chrome" />
-			<parameter name="Groups" value="WEB,ResponsiveFight,Bus" />
-			<parameter name="Author" value="GauravK" />
-		</test>
 		<test name="RF - Bus Challenge Grid Win Chrome" preserve-order="true">
 			<classes><class name="tests.responsivefight.busChallenge"></class></classes>
 			<parameter name="Browser" value="grid-win-chrome" />
