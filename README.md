@@ -36,3 +36,7 @@ The cross browser tests cover, Windows, MAC platform for chrome, edge, opera and
 3. The execution will run both Responsive Fight and Supr Villain test in ~4 mins.
 4. Once completed,  test report**(ExtentReport.html)** will be generated in **target/Extent** folder.
 
+##### Latest Report
+
+http://teamcity.gauravkakkar.id.au/project/Codility?mode=builds&projectTab=preport_project4_ExtentReport&guest=1
+
