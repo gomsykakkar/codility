@@ -1,4 +1,7 @@
 # Codility
+<a href="http://teamcity.gauravkakkar.id.au/viewType.html?buildTypeId=Codility_Build&guest=1">
+<img src="http://teamcity.gauravkakkar.id.au/app/rest/builds/buildType:(id:Codility_Build)/statusIcon"/>
+</a>
 
 There are total 6 tests, 5 cross browser tests for **"Responsive Fight"** app and 1 API tests covering all API operatons for **"Super Villain API"**.
 
