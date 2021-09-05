@@ -31,7 +31,7 @@ Super Villain API test
 
 ##### Steps
 1. Navigate to Teamcity(http://teamcity.gauravkakkar.id.au/guestLogin.html?guest=1)
-2. For Project Codility>Build click Run button and tests will be placed in queue for execution.(ETA ~4 mins)
+2. For Project Codility>Build click Run button and tests will be placed in queue for execution.(ETA ~10 mins)
 3. Click the build number
 4. and then navigate to Artifacts tab
 5. Download artifact file named ExtentReports.html
