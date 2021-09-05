@@ -57,7 +57,7 @@ public abstract class Web_PageBase {
 	}
 	
     public void waitForElementVisible(WebElement element){
-    	WebDriverWait wait = new WebDriverWait(driver, 20);
+    	WebDriverWait wait = new WebDriverWait(driver, 60);
     	wait.until(ExpectedConditions.visibilityOf(element));
     }
     

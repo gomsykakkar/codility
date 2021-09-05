@@ -12,9 +12,15 @@
 			<parameter name="Groups" value="WEB,ResponsiveFight,Bus" />
 			<parameter name="Author" value="GauravK" />
 		</test>
-		<test name="RF - Bus Challenge Grid Any Edge" preserve-order="true">
+		<test name="RF - Bus Challenge Grid Win Edge" preserve-order="true">
 			<classes><class name="tests.responsivefight.busChallenge"></class></classes>
-			<parameter name="Browser" value="grid-any-edge" />
+			<parameter name="Browser" value="grid-win-edge" />
+			<parameter name="Groups" value="WEB,ResponsiveFight,Bus" />
+			<parameter name="Author" value="GauravK" />
+		</test>
+		<test name="RF - Bus Challenge Grid Mac Edge" preserve-order="true">
+			<classes><class name="tests.responsivefight.busChallenge"></class></classes>
+			<parameter name="Browser" value="grid-mac-edge" />
 			<parameter name="Groups" value="WEB,ResponsiveFight,Bus" />
 			<parameter name="Author" value="GauravK" />
 		</test>
@@ -24,9 +30,21 @@
 			<parameter name="Groups" value="WEB,ResponsiveFight,Bus" />
 			<parameter name="Author" value="GauravK" />
 		</test>
+		<test name="RF - Bus Challenge Grid Mac Firefox" preserve-order="true">
+			<classes><class name="tests.responsivefight.busChallenge"></class></classes>
+			<parameter name="Browser" value="grid-mac-firefox" />
+			<parameter name="Groups" value="WEB,ResponsiveFight,Bus" />
+			<parameter name="Author" value="GauravK" />
+		</test>
 		<test name="RF - Bus Challenge Grid Win Opera" preserve-order="true">
 			<classes><class name="tests.responsivefight.busChallenge"></class></classes>
 			<parameter name="Browser" value="grid-win-opera" />
+			<parameter name="Groups" value="WEB,ResponsiveFight,Bus" />
+			<parameter name="Author" value="GauravK" />
+		</test>
+		<test name="RF - Bus Challenge Grid Mac Safari" preserve-order="true">
+			<classes><class name="tests.responsivefight.busChallenge"></class></classes>
+			<parameter name="Browser" value="grid-mac-safari" />
 			<parameter name="Groups" value="WEB,ResponsiveFight,Bus" />
 			<parameter name="Author" value="GauravK" />
 		</test>

@@ -100,7 +100,7 @@ public abstract class Web_TestBase {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setBrowserName("firefox");
 			cap.setPlatform(Platform.MAC);
-	       	driver = new RemoteWebDriver(new URL("http://user1:pass1@wingrid.gauravkakkar.id.au/wd/hub"),cap);
+	       	driver = new RemoteWebDriver(new URL("http://192.168.18.101:4444/wd/hub"),cap);
 			driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}else if(browser.equalsIgnoreCase("grid-win-firefox")) {
@@ -108,7 +108,7 @@ public abstract class Web_TestBase {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setBrowserName("firefox");
 			cap.setPlatform(Platform.WIN10);
-	       	driver = new RemoteWebDriver(new URL("http://user1:pass1@wingrid.gauravkakkar.id.au/wd/hub"),cap);
+	       	driver = new RemoteWebDriver(new URL("http://192.168.18.101:4444/wd/hub"),cap);
 			driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}else if(browser.equalsIgnoreCase("grid-mac-chrome")) {
@@ -116,7 +116,7 @@ public abstract class Web_TestBase {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.MAC);
-	       	driver = new RemoteWebDriver(new URL("http://user1:pass1@wingrid.gauravkakkar.id.au/wd/hub"),cap);
+	       	driver = new RemoteWebDriver(new URL("http://192.168.18.101:4444/wd/hub"),cap);
 			driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}else if(browser.equalsIgnoreCase("grid-win-chrome")) {
@@ -124,28 +124,38 @@ public abstract class Web_TestBase {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.WIN10);
-	       	driver = new RemoteWebDriver(new URL("http://user1:pass1@wingrid.gauravkakkar.id.au/wd/hub"),cap);
+	       	driver = new RemoteWebDriver(new URL("http://192.168.18.101:4444/wd/hub"),cap);
 			driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		}else if(browser.equalsIgnoreCase("grid-any-edge")) {
-			WebDriverManager.edgedriver().setup();
-			EdgeOptions options = new EdgeOptions();
-			driver = new RemoteWebDriver(new URL("http://user1:pass1@wingrid.gauravkakkar.id.au/wd/hub"),options);
+		}else if(browser.equalsIgnoreCase("grid-win-edge")) {
+			WebDriverManager.edgedriver().mac().setup();
+			DesiredCapabilities cap=new DesiredCapabilities();
+			cap.setBrowserName("MicrosoftEdge");
+			cap.setPlatform(Platform.WIN10);
+			driver = new RemoteWebDriver(new URL("http://192.168.18.101:4444/wd/hub"),cap);
 			driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		}else if(browser.equalsIgnoreCase("grid-mac-edge")) {
+			WebDriverManager.edgedriver().mac().setup();
+			DesiredCapabilities cap=new DesiredCapabilities();
+			cap.setBrowserName("MicrosoftEdge");
+			cap.setPlatform(Platform.MAC);
+			driver = new RemoteWebDriver(new URL("http://192.168.18.101:4444/wd/hub"),cap);
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}else if(browser.equalsIgnoreCase("grid-win-opera")) {
 			WebDriverManager.operadriver().setup();
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setBrowserName("opera");
 			cap.setPlatform(Platform.WIN10);
-			driver = new RemoteWebDriver(new URL("http://user1:pass1@wingrid.gauravkakkar.id.au/wd/hub"),cap);
+			driver = new RemoteWebDriver(new URL("http://192.168.18.101:4444/wd/hub"),cap);
 			driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}else if(browser.equalsIgnoreCase("grid-mac-safari")) {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setBrowserName("safari");
 			cap.setPlatform(Platform.MAC);
-	       	driver = new RemoteWebDriver(new URL("http://user1:pass1@wingrid.gauravkakkar.id.au/wd/hub"),cap);
+	       	driver = new RemoteWebDriver(new URL("http://192.168.18.101:4444/wd/hub"),cap);
 			driver.manage().window().maximize();
 	        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}else{
